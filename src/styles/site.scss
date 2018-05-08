@@ -1,0 +1,353 @@
+.form-source{
+  padding: 24px;
+}
+.form-block{
+  margin-top: 24px;
+  height: 24px;
+  border-top: 1px solid #ebebeb;
+  border-radius: 3px;
+  transition: .2s;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  margin-bottom: 45px;
+  line-height: 1.5em;
+}
+table td, table th {
+  /*border-bottom: 1px solid #d8d8d8;*/
+  padding: 0px;
+  max-width: 250px;
+}
+table th {
+  text-align: left;
+  white-space: nowrap;
+  color: #666;
+  font-weight: 400;
+}
+/*table th {*/
+/*border-bottom: 1px solid #d8d8d8;*/
+/*padding: 15px;*/
+/*max-width: 250px;*/
+/*}*/
+.date-list {
+  display: block;
+  overflow: hidden;
+  margin: 0 0 -1px 0;
+}
+ul.dates {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+ul.dateinfo {
+  list-style: none;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 45px;
+  width: 5000px;
+}
+ul.dateinfo > li {
+  padding-top: 2px;
+  width: 70px;
+  height: 45px;
+  display: inline-block;
+  float: left;
+  border: 1px solid #E6E6E6;
+  border-right: none;
+  text-align: center;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  border-bottom: 1px solid #00ccff;
+}
+ul.dateinfo li .day {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #999;
+}
+ul.dateinfo > li.selected {
+  border-bottom-color: white;
+}
+
+ul.dateinfo > li.selected, ul.dateinfo > li:hover {
+  border-color: #00CCFF;
+  color: #00ccff;
+}
+ul.dateinfo > li.selected .day, ul.dateinfo > li:hover .day {
+  color: #00ccff;
+}
+
+.timeblock {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.timeheader {
+  position: relative;
+  margin-left: 55px;
+  overflow: hidden;
+  padding-top: 26px;
+  height: 50px;
+  margin-right: 50px;
+}
+
+.timelistwrap {
+  position: absolute;
+  height: 50px;
+}
+
+ul.timelist {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0 20px;
+  width: 5000px;
+}
+
+ul.timelist li {
+  display: inline-block;
+  float: left;
+  width: 80px;
+}
+
+.timetext {
+  font-size: 1rem;
+  margin-left: -15px;
+}
+
+.short-vertical {
+  border-left: 1px solid #E6E6E6;
+  height: 8px;
+}
+
+.short-vertical-half {
+  border-left: 1px solid #E6E6E6;
+  height: 4px;
+  float: left;
+  margin-left: 50%;
+  margin-top: -4px;
+}
+
+ul.timelist > li:last-child .short-vertical-half {
+  display: none;
+}
+
+.scheduletablewrap {
+  /*padding-right: 16px;*/
+  margin-top: -1px;
+}
+
+.productlistwrap {
+  width: 70px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-list {
+  position: absolute;
+}
+
+.productitem {
+  width: 65px;
+  text-align: center;
+  height: 50px;
+  /*border: 1px solid;*/
+  padding: 4px 2px 0 2px;
+}
+
+.productitem .productname {
+  font-size: 1rem;
+  margin: 0;
+  display: block;
+}
+
+.productitem.noswitch .productname {
+  margin-top: 11px;
+}
+
+.productitem .productname span {
+  border: 1px solid #00ccff;
+  border-radius: 3px;
+  display: block;
+  color: #00ccff;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 60px;
+}
+
+.productitem.busy .productname span {
+  border: 1px solid #d9534f;
+  background: #d9534f;
+  color: white;
+}
+
+.checkboxwarp {
+  display: inline-block;
+  text-align: left;
+}
+
+.ui-switch input {
+  cursor: pointer;
+}
+
+.schedulelist {
+  margin-left: 75px;
+  overflow: hidden;
+  position: relative;
+}
+
+.schedulelist .tablewrap {
+  position: relative;
+}
+
+.schedulelist table {
+  /*width: 100%;*/
+  vertical-align: middle;
+}
+
+.schedulelist table th {
+  width: 40px;
+  min-width: 40px;
+  height: 0;
+}
+
+.schedulelist table td {
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  height: 50px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.schedulelist table td > div {
+  width: 100%;
+  height: 100%;
+}
+
+.schedulelist table td.checked > div {
+  background: url(../../assets/bookedchecked.png) no-repeat center;
+  background-color: #5c5c5c;
+  background-color: rgba(0, 0, 0, 0.53);
+  border-right: 1px solid #e6e6e6;
+}
+
+.schedulelist table tr td:first-child {
+  border-left: none !important;
+}
+
+.schedulelist table {
+  border-left: 1px solid #e6e6e6;
+}
+
+.schedulelist table td[colspan] {
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+  width: auto;
+  height: 50px;
+  max-width: none;
+}
+
+.schedulelist table tr td.scheduletd-l {
+  border-right: none;
+}
+
+.schedulelist table tr td:last-child.scheduletd-l,
+.schedulelist table tr td.last-child.scheduletd-l {
+  border-right: 1px solid #E6E6E6;
+}
+
+.schedulelist table tr td.scheduletd-r {
+  border-left: none;
+}
+
+.schedulelist table tr.hover td,
+.schedulelist table tr td.hover {
+  background: #eee;
+}
+
+.schedulelist table tr td.unabled {
+
+  background-color: #d0d0d0;
+}
+
+.schedulelist table tr td.locked {
+  /*background-image: url('/css/ydx/company2/images/booking/lock.png');*/
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.infoblock {
+  width: 290px;
+  float: right;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  height: 100%;
+  position: relative;
+  border-left: 1px solid #e6e6e6;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.infoblock h6 {
+  /*padding: 8px 0;*/
+}
+
+.infoblock .empty {
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  color: #ccc;
+  display: none;
+}
+
+.infoblock .empty.show {
+  display: block;
+}
+
+.infoblock .empty.show + div {
+  display: none;
+}
+.booked-info,
+.member-info,
+.changeMember {
+  display: none;
+}
+
+.member-info {
+  margin-top: 20px;
+}
+
+.booked-info.show,
+.member-info.show {
+  display: block;
+}
+
+.booked-info .labeltitle,
+.member-info .labeltitle {
+  font-weight: bold;
+  width: 70px;
+  float: left;
+}
+
+.booked-info .labeltitle + div,
+.member-info .labeltitle + div {
+  margin-left: 70px;
+  -moz-word-break: break-all;
+  -o-word-break: break-all;
+  word-break: break-all;
+}
